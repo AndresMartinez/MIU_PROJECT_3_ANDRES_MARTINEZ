@@ -16,7 +16,8 @@
 	
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
-	<link rel="stylesheet" href="css/Styles.css">
+	<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.css" /> 
+    <link rel="stylesheet" href="css/Styles.css">
 	
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -437,7 +438,14 @@
                      
                      
                           <!--  Need Date picker here-->
-	                                    
+                         
+                       
+                          <label for="mydate">Workout date:</label>
+
+                       <div data-role="fieldcontain">
+                            <input name="mydate" id="mydate" type="date" data-role="datebox"
+                            data-options='{"mode": "calbox"}'>
+	                    </div>               
 	                                         
                    
                    <div data-role="fieldcontain">
@@ -489,6 +497,7 @@
     <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
     <script type="text/javascript" src="js/libs/jquery.validate.min.js" ></script>
+    <script type="text/javascript" src="http://dev.jtsage.com/cdn/datebox/latest/jquery.mobile.datebox.min.js"></script>
     <script type="text/javascript"  src="js/main.js"> </script>
      
 
